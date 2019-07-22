@@ -1,0 +1,93 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>TietzeIO.CyShell</RootNamespace>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>30.0.0</Version>
+    <AssemblyVersion>30.0.0.0</AssemblyVersion>
+    <FileVersion>30.0.0.0</FileVersion>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AssemblyName>TietzeIO.CyShell</AssemblyName>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AnalyticsCmdlets.ps1" />
+    <None Remove="CHANGELOG.md" />
+    <None Remove="Invoke-CylanceProblemWizard.ps1" />
+    <None Remove="Invoke-InstallModule.ps1" />
+    <None Remove="LICENSE.md" />
+    <None Remove="README.md" />
+    <None Remove="TenantCmdlets.ps1" />
+    <None Remove="TietzeIO.CyShell.psd1" />
+    <None Remove="TietzeIO.CyShell.psm1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="CHANGELOG.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AnalyticsCmdlets.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LICENSE.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TenantCmdlets.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TietzeIO.CyShell.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Invoke-InstallModule.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TietzeIO.CyShell.psm1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
+    <PackageReference Include="Nito.AsyncEx.Tasks" Version="5.0.0" />
+    <PackageReference Include="CsvHelper" Version="12.1.2"></PackageReference>
+    <PackageReference Include="EPPlus" Version="4.5.3.2" />
+    <PackageReference Include="Flurl.Http" Version="2.4.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NLog" Version="4.6.6" />
+    <PackageReference Include="Polly" Version="7.1.0" />
+    <PackageReference Include="SQLitePCLRaw.provider.e_sqlite3.netstandard11" Version="1.1.14" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+    <PackageReference Include="TietzeIO.CyAPI" Version="1.0.0" />
+    <PackageReference Include="TietzeIO.CyAPI.CAE" Version="1.0.0" />
+    <PackageReference Include="TietzeIO.CyAPI.Configuration.DPAPI" Version="1.0.0" />
+    <PackageReference Include="TietzeIO.CyAPI.Configuration.Plaintext" Version="2.0.0" />
+    <PackageReference Include="TietzeIO.CyAPI.Polyfills" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Main.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Main.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Main.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Main.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="c:\windows\system32\windowspowershell\v1.0\powershell.exe -executionpolicy bypass -c invoke-psake" />
+  </Target>
+
+</Project>
