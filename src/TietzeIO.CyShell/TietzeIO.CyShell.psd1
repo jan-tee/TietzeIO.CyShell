@@ -185,6 +185,7 @@ FunctionsToExport = @(
 FileList = @(
 	"CHANGELOG.md",
 	"LICENSE.md",
+	"License.txt",
 	"README.md",
 	"TietzeIO.CyShell.psd1",
 	"TietzeIO.CyShell.psm1",
