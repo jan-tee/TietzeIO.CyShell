@@ -271,7 +271,7 @@ FileList = @(
 	"System.Xml.XmlDocument.dll",
 	"System.Xml.XPath.dll",
 	"System.Xml.XPath.XmlDocument.dll",
-	"TietzeIO.CAE.dll",
+	"TietzeIO.CyAPI.CAE.dll",
 	"TietzeIO.CyAPI.Configuration.DPAPI.dll",
 	"TietzeIO.CyAPI.Configuration.Plaintext.dll",
 	"TietzeIO.CyAPI.dll",

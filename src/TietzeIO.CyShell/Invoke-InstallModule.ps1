@@ -30,6 +30,19 @@ $FileList = $ModuleData.FileList |% {
 
 # $AllFiles = Get-ChildItem -Path $SourcePath -File -Recurse
 
+# delete old directories
+$FileList | 
+    ForEach-Object { 
+        $FileName = $_
+		$DestinationFile = Join-Path $ModuleDir -ChildPath $FileName
+		$TargetDir = Split-Path $DestinationFile
+
+        if (Test-Path $TargetDir -PathType Container) {
+		    Get-ChildItem -Path $TargetDir -Recurse | Remove-Item -Recurse
+        }
+	}
+
+# copy
 $FileList | 
     ForEach-Object { 
         $FileName = $_
@@ -46,10 +59,6 @@ $FileList |
 			New-Item -Path $TargetDir -ItemType Directory -EA Stop | Out-Null
 			Write-Host "$ModuleName created module folder '$($TargetDir)'"
 		}
-
-		# ensure no files left from previous install
-		Get-ChildItem -Path $TargetDir -Recurse |
-			Remove-Item
 
 		Copy-Item -Path $SourceFile -Destination $DestinationFile
 
