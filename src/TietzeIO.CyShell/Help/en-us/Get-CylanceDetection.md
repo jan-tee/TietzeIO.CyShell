@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-CylanceDetection
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Gets details for a detection
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-CylanceDetection [-Detection <CyDetectionMetaData>] [-Api <ApiConnectionHand
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Retrieves the detailed object for a detection event.
 
 ## EXAMPLES
 

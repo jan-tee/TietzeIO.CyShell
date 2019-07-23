@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-CylanceDetectionException
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Retrieves details for a detection exception
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-CylanceDetectionException -DetectionException <CyDetectionExceptionMetaData>
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Retrieves details for a detection exception
 
 ## EXAMPLES
 

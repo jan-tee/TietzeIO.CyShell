@@ -8,7 +8,7 @@ schema: 2.0.0
 # Block-CylanceDeviceThreat
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Quarantines a threat instance on a device
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Block-CylanceDeviceThreat -ThreatInstance <ICyThreatInstance> [-Api <ApiConnecti
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Quarantines a threat instance on a device (local quarantine action).
 
 ## EXAMPLES
 

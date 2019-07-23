@@ -8,7 +8,7 @@ schema: 2.0.0
 # Backup-CylanceTenant
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Creates a JSON file backup of the current console configuration
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Backup-CylanceTenant [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Creates a JSON file backup of the current console configuration
 
 ## EXAMPLES
 

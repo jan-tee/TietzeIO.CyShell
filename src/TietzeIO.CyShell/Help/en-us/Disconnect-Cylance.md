@@ -8,7 +8,7 @@ schema: 2.0.0
 # Disconnect-Cylance
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Disconnects from a console.
 
 ## SYNTAX
 

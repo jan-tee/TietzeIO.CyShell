@@ -8,7 +8,7 @@ schema: 2.0.0
 # Add-CylanceDeviceToZone
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Adds a device to a zone.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Add-CylanceDeviceToZone -Device <CyDeviceMetaData> [-Api <ApiConnectionHandle>] 
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Adds a device to a zone.
 
 ## EXAMPLES
 
