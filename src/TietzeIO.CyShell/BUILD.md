@@ -2,7 +2,13 @@
 
 ## Build dependencies
 
-To build the online help/documentation, you will need to have these **Powershell modules** installed (installable with the below commands)
+**To build the module itself:**
+
+* Ensure you create a NuGet repository (in Visual Studio) for the .nupkg files created by Release builds of the `Tietze.CyAPI` solution
+ (typically the `nupkg` directory created during builds in your local Tietze.CyAPI repository directory).
+* Then start your build - it should automatically restore the `Tietze.CyAPI.*` packages that are referenced in the project file.
+
+**To build the online help/documentation**, you will need to have these **Powershell modules** installed (installable with the below commands)
 
 * Install-Module PSake
 * Install-Module PlatyPS

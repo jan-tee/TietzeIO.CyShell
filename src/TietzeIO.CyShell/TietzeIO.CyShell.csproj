@@ -67,7 +67,7 @@
     <PackageReference Include="TietzeIO.CyAPI" Version="1.0.0" />
     <PackageReference Include="TietzeIO.CyAPI.CAE" Version="1.0.0" />
     <PackageReference Include="TietzeIO.CyAPI.Configuration.DPAPI" Version="1.0.0" />
-    <PackageReference Include="TietzeIO.CyAPI.Configuration.Plaintext" Version="2.0.0" />
+    <PackageReference Include="TietzeIO.CyAPI.Configuration.Plaintext" Version="1.0.0" />
     <PackageReference Include="TietzeIO.CyAPI.Polyfills" Version="1.0.0" />
   </ItemGroup>
 
