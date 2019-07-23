@@ -7,7 +7,7 @@
 RootModule = 'TietzeIO.CyShell.dll'
 
 # Version number of this module.
-ModuleVersion = '1.0.1'
+ModuleVersion = '1.0.2'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -292,16 +292,16 @@ PrivateData = @{
         Tags = @('cylance', 'api', 'optics')
 
         # A URL to the license for this module.
-        LicenseUri = 'https://github.com/jan-tee/cycli-v2-powershell/blob/master/LICENSE'
+        LicenseUri = 'https://github.com/jan-tee/TietzeIO.CyShell/blob/master/LICENSE.md'
 
         # A URL to the main website for this project.
-        ProjectUri = 'https://github.com/jan-tee/cycli-v2-powershell'
+        ProjectUri = 'https://github.com/jan-tee/TietzeIO.CyShell'
 
         # A URL to an icon representing this module.
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'https://github.com/jan-tee/cycli-v2-powershell/blob/master/CHANGELOG.md'
+        ReleaseNotes = 'https://github.com/jan-tee/TietzeIO.CyShell/blob/master/CHANGELOG.md'
 
     } # End of PSData hashtable
 

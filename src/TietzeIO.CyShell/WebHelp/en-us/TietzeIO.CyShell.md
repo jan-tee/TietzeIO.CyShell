@@ -11,8 +11,12 @@ Locale: en-us
 A PowerShell module for fast, easy, and reliable interaction with the Cylance REST API services.
 
 ## TietzeIO.CyShell Cmdlets
+
+### [Backup-CylanceOpticsPackages](Backup-CylanceOpticsPackages.md)
+Creates a backup of OPTICS packages to local ZIP files
+
 ### [Backup-CylanceTenant](Backup-CylanceTenant.md)
-Creates a back up of settings in a tenant
+Creates a backup of settings in a tenant
 
 ### [Invoke-CylanceIssuerSignatureMissingWizard](Invoke-CylanceIssuerSignatureMissingWizard.md)
 Tests for OPTICS detection instances that are likely caused by a local configuration issue in the tenant environment (outside the Cylance configuration) preventing Windows from performing proper certificate validation checks

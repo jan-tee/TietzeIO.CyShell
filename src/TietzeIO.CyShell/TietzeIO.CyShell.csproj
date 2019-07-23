@@ -15,7 +15,6 @@
   <ItemGroup>
     <None Remove="AnalyticsCmdlets.ps1" />
     <None Remove="CHANGELOG.md" />
-    <None Remove="Invoke-CylanceProblemWizard.ps1" />
     <None Remove="Invoke-InstallModule.ps1" />
     <None Remove="LICENSE.md" />
     <None Remove="README.md" />
@@ -64,11 +63,11 @@
     <PackageReference Include="Polly" Version="7.1.0" />
     <PackageReference Include="SQLitePCLRaw.provider.e_sqlite3.netstandard11" Version="1.1.14" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
-    <PackageReference Include="TietzeIO.CyAPI" Version="1.0.0" />
-    <PackageReference Include="TietzeIO.CyAPI.CAE" Version="1.0.0" />
-    <PackageReference Include="TietzeIO.CyAPI.Configuration.DPAPI" Version="1.0.0" />
-    <PackageReference Include="TietzeIO.CyAPI.Configuration.Plaintext" Version="1.0.0" />
-    <PackageReference Include="TietzeIO.CyAPI.Polyfills" Version="1.0.0" />
+    <PackageReference Include="TietzeIO.CyAPI" Version="1.0.1" />
+    <PackageReference Include="TietzeIO.CyAPI.CAE" Version="1.0.1" />
+    <PackageReference Include="TietzeIO.CyAPI.Configuration.DPAPI" Version="1.0.1" />
+    <PackageReference Include="TietzeIO.CyAPI.Configuration.Plaintext" Version="1.0.1" />
+    <PackageReference Include="TietzeIO.CyAPI.Polyfills" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>

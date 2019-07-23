@@ -55,7 +55,7 @@ Application template name
 Type: String[]
 Parameter Sets: (All)
 Aliases:
-Accepted values: Defender, FireEye_HX_Windows, Kaspersky_Windows, McAfee_Linux, McAfee_Windows, SCCM, SophosAV_Windows, Symantec_Windows, Tanium_Linux, Tanium_macOS, Tanium_Windows, TrendMicro_Windows, VirtualBox_Windows, Windows
+Accepted values: Defender, Kaspersky_Windows, McAfee_Linux, McAfee_Windows, SCCM, SophosAV_Windows, Symantec_Windows, Tanium_Linux, Tanium_macOS, Tanium_Windows, TrendMicro_Windows, VirtualBox_Windows, Windows
 
 Required: True
 Position: 1

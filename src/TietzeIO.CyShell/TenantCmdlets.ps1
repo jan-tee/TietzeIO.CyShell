@@ -1,4 +1,4 @@
-﻿function Download-CylanceOpticsPackages() {
+﻿function Backup-CylanceOpticsPackages() {
 	 Get-CylancePackages | Get-CylancePackage | ForEach-Object {
 	 	 $name = $_.packageDescriptor.name
 		 $file = $_.PackageFile
