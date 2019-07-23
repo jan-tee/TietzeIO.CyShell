@@ -7,7 +7,7 @@
 RootModule = 'TietzeIO.CyShell.dll'
 
 # Version number of this module.
-ModuleVersion = '30.0.0'
+ModuleVersion = '1.0.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -29,7 +29,7 @@ Description = @'
 A module that provides Powershell commands to deal with CylancePROTECT and 
 OPTICS detection and prevention events.
 
-Check out the project page at https://github.com/jan-tee/ and the README and FAQ!.
+Check out the project page at https://github.com/jan-tee/TietzeIO.CyShell and the README and FAQ!.
 '@
 
 # Minimum version of the Windows PowerShell engine required by this module
@@ -161,7 +161,7 @@ NestedModules = @(
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = @(
-	"Download-CylanceOpticsPackages",
+	"Backup-CylanceOpticsPackages",
 	"Backup-CylanceTenant",
 	"Invoke-CylanceIssuerSignatureMissingWizard"
 )

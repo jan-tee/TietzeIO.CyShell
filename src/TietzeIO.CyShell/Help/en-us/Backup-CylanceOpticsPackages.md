@@ -5,7 +5,7 @@ online version:
 schema: 2.0.0
 ---
 
-# Download-CylanceOpticsPackages
+# Backup-CylanceOpticsPackages
 
 ## SYNOPSIS
 Downloads OPTICS packages as .zip files.
@@ -13,17 +13,17 @@ Downloads OPTICS packages as .zip files.
 ## SYNTAX
 
 ```
-Download-CylanceOpticsPackages [<CommonParameters>]
+Backup-CylanceOpticsPackages [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Downloads OPTICS packages as .zip files. The .zip files include the definition of the package and additional information in a JSON blob.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Download-CylanceOpticsPackages
+PS C:\> {{ Add example code here }}
 ```
 
 {{ Add example description here }}
