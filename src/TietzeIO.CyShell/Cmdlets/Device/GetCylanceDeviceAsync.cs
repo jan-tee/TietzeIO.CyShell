@@ -79,7 +79,6 @@ namespace TietzeIO.CyShell.Cmdlets.Device
                     {
                         return new[] { Connection.RequestDeviceDetailsAsync(q[0]) };
                     }
-                    break;
             }
             throw new Exception("Could not determine operation mode.");
         }

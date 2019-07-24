@@ -1,6 +1,5 @@
-﻿using System.Management.Automation;
-using Nito.AsyncEx.Synchronous;
-using TietzeIO.CyAPI;
+﻿using Nito.AsyncEx.Synchronous;
+using System.Management.Automation;
 using TietzeIO.CyAPI.Entities;
 using TietzeIO.CyShell.Cmdlets.Base;
 
