@@ -4,9 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>TietzeIO.CyShell</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>30.0.0</Version>
+    <Version>31.0.0</Version>
     <AssemblyVersion>30.0.0.0</AssemblyVersion>
-    <FileVersion>30.0.0.0</FileVersion>
+    <FileVersion>31.0.0.0</FileVersion>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <AssemblyName>TietzeIO.CyShell</AssemblyName>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
@@ -67,7 +67,7 @@
     <PackageReference Include="Polly" Version="7.1.0" />
     <PackageReference Include="SQLitePCLRaw.provider.e_sqlite3.netstandard11" Version="1.1.14" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
-    <PackageReference Include="TietzeIO.CyAPI" Version="1.0.2" />
+    <PackageReference Include="TietzeIO.CyAPI" Version="1.0.3" />
     <PackageReference Include="TietzeIO.CyAPI.CAE" Version="1.0.1" />
     <PackageReference Include="TietzeIO.CyAPI.Configuration.DPAPI" Version="1.0.1" />
     <PackageReference Include="TietzeIO.CyAPI.Configuration.Plaintext" Version="1.0.1" />
