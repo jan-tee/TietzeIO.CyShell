@@ -12,7 +12,7 @@ namespace TietzeIO.CyShell.Util
     public class PowershellConsoleUtil
     {
         /// <summary>
-        /// Shows a progress indicator while waiting for a set of asynchroneous tasks to complete.
+        /// Shows a progress indicator while waiting for a set of asynchronous tasks to complete.
         /// </summary>
         /// <typeparam name="T">Type of result for the tasks</typeparam>
         /// <param name="cmdlet">cmdlet to display progress information</param>

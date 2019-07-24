@@ -7,7 +7,7 @@ using TietzeIO.CyShell.Util.Progress;
 namespace TietzeIO.CyShell.Cmdlets.Base
 {
     /// <summary>
-    /// An abstract class to build Powershell Cmdlets that support asynchroneous, multi-threaded
+    /// An abstract class to build Powershell Cmdlets that support asynchronous, multi-threaded
     /// mass operations on data, while preserving the order of source objects and associated results.
     /// </summary>
     /// <typeparam name="TOutput">Output type for a task. E.g. if you wish to queue tasks that
@@ -119,7 +119,7 @@ namespace TietzeIO.CyShell.Cmdlets.Base
         protected void WriteObjectsFromCompletedTasks()
         {
             // check if first element of queue has completed, and return record.
-            // repeat until first element is not completed, or no more elemens.
+            // repeat until first element is not completed, or no more elements.
             long flushed = FlushResultObjects(false);
             if (flushed > 0)
                 WriteVerbose($"ProcessRecord: Flushed {flushed} records");

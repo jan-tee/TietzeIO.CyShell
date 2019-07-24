@@ -5,7 +5,7 @@ using System.Threading;
 namespace TietzeIO.CyShell.Cmdlets.Base
 {
     /// <summary>
-    /// A thread-safe logger that is attached to APIv2 instances to allow for asynchroneous logging from other threads.
+    /// A thread-safe logger that is attached to APIv2 instances to allow for asynchronous logging from other threads.
     /// </summary>
     public class PowershellThreadSafeVerboseLogger
     {
