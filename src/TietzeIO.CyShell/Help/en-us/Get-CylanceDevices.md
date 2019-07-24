@@ -6,9 +6,9 @@ schema: 2.0.0
 ---
 
 # Get-CylanceDevices
-
+c
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Returns a list of all registered devices.
 
 ## SYNTAX
 
@@ -17,16 +17,50 @@ Get-CylanceDevices [-Api <ApiConnectionHandle>] [-Zone <CyZone>] [<CommonParamet
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Returns a list of all registered devices in the Cylance console. Example Properties are shown below
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> Get-CylanceDevices
+date_first_registered : 7/16/2019 4:36:03 PM
+policy                : Sample Policy (123344558-7544-1337-ab013-3322432423437378)
+state                 : Offline
+agent_version         : 2.0.1534
+ip_addresses          : {10.10.10.20, 192.168.1.100}
+mac_addresses         : {00-0C-29-E2-F8-DD, 00-0C-29-E2-F8-E7}
+device_id             : 234f3abf2-c5d4-3347-1337-b4931a7df7ec
+device_name           : Malware-Laptop
+
 ```
 
-{{ Add example description here }}
+A list of the above item will be returned.
+
+### Example 2
+Getting device details from a list of devices
+```powershell
+PS C:\> Get-CylanceDevices | where device_name -like "Malware*" | Get-CylanceDevice
+host_name             : Malware-Laptop
+os_version            : Microsoft Windows 7 Professional, Service Pack 1
+last_logged_in_user   : Malware-Laptop\Demo
+distinguished_name    :
+update_type           :
+update_available      : False
+background_detection  : False
+is_safe               : True
+date_last_modified    :
+date_offline          :
+Zones                 :
+date_first_registered : 11/26/2018 5:09:16 PM
+policy                : Sample Policy (123344558-7544-1337-ab013-3322432423437378)
+state                 : Online
+agent_version         : 2.0.1534
+ip_addresses          : {10.10.10.20, 192.168.1.100}
+mac_addresses         : {00-0C-29-E2-F8-DD, 00-0C-29-E2-F8-E7}
+device_id             : 234f3abf2-c5d4-3347-1337-b4931a7df7ec
+device_name           : Malware-Laptop
+```
 
 ## PARAMETERS
 
