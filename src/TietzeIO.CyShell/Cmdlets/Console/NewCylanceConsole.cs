@@ -1,6 +1,7 @@
 ﻿using System.Management.Automation;
 using TietzeIO.CyAPI;
 using TietzeIO.CyAPI.Configuration;
+using TietzeIO.CyAPI.Session;
 using TietzeIO.CyShell.Cmdlets.Base;
 using TietzeIO.CyShell.Session;
 
@@ -83,7 +84,7 @@ namespace TietzeIO.CyShell.Cmdlets.Console
             console.APIUrl = APIAuthUrl;
             console.TDRUrl = TDRUrl;
 
-            var apiSession = new ApiV2Session
+            var apiSession = new SessionDescriptor
             {
                 APIId = console.APIId,
                 APISecret = console.APISecret.Value,

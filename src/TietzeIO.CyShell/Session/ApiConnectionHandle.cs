@@ -7,6 +7,7 @@ using TietzeIO.CyAPI;
 using TietzeIO.CyAPI.Entities;
 using TietzeIO.CyAPI.Entities.Optics;
 using TietzeIO.CyAPI.Entities.Policy;
+using TietzeIO.CyAPI.Session;
 using TietzeIO.CyShell.Cmdlets.Base;
 using TietzeIO.CyShell.Util;
 
@@ -25,7 +26,7 @@ namespace TietzeIO.CyShell.Session
         private static ApiConnectionHandle _global;
         public static ApiConnectionHandle Global { get => _global; }
 
-        public ApiV2Session Session { get; private set; }
+        public SessionDescriptor Session { get; private set; }
 
         internal ApiV2 API { get; set; }
         public bool CacheMode { get; internal set; }
@@ -41,7 +42,7 @@ namespace TietzeIO.CyShell.Session
         public List<CyPolicyMetaData> Policies { get; private set; }
         public List<CyUser> Users { get; private set; }
 
-        public ApiConnectionHandle(ApiV2Session session)
+        public ApiConnectionHandle(SessionDescriptor session)
         {
             Session = session;
         }

@@ -1,12 +1,11 @@
-﻿using System.Linq;
+﻿using Nito.AsyncEx.Synchronous;
+using System.Linq;
 using System.Management.Automation;
-using Nito.AsyncEx.Synchronous;
-using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
 using TietzeIO.CyAPI;
 using TietzeIO.CyAPI.Configuration;
+using TietzeIO.CyAPI.Session;
 using TietzeIO.CyShell.Cmdlets.Base;
 using TietzeIO.CyShell.Session;
-using static TietzeIO.CyAPI.ApiV2;
 
 namespace TietzeIO.CyShell.Cmdlets.Session
 {
@@ -44,7 +43,7 @@ namespace TietzeIO.CyShell.Cmdlets.Session
             var console = ConfigurationManager.Default.Get(_consolesParam.Value);
             WriteVerbose($"Found console with API ID: {console.APIId}");
 
-            var apiSession = new ApiV2Session
+            var apiSession = new SessionDescriptor
             {
                 APIId = console.APIId,
                 APISecret = console.APISecret.Value,

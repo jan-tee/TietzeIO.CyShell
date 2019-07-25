@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Management.Automation;
 using TietzeIO.CyAPI;
-using TietzeIO.CyAPI.Entities;
 using TietzeIO.CyAPI.Entities.Optics;
 using TietzeIO.CyShell.Cmdlets.Base;
 
@@ -18,7 +17,7 @@ namespace TietzeIO.CyShell.Cmdlets.Detection
             base.ProcessRecord();
             if (Detection != null)
             {
-                var url = ApiV2.GetShardUrl(ApiV2.ShardUrl.PROTECT, "euc1", $"/Optics#/detect/{Detection.id}");
+                var url = ApiV2.GetShardUrl(ShardUrl.PROTECT, "euc1", $"/Optics#/detect/{Detection.id}");
                 Process.Start(url);
             }
         }
