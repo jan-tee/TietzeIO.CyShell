@@ -30,6 +30,10 @@ CyShell is released in the Powershell Gallery, and can be installed by:
 install-module -name TietzeIO.CyShell
 ```
 
+## Web Documentation
+
+Documentation can be found here: https://jan-tee.github.io/TietzeIO.CyShell/TietzeIO.CyShell.html
+
 ## Usage
 
 Once TietzeIO.CyShell has been installed, you will need to setup a new connection to the Cylance API. You can do this by the following:
