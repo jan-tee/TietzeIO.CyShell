@@ -7,7 +7,7 @@
 RootModule = 'TietzeIO.CyShell.dll'
 
 # Version number of this module.
-ModuleVersion = '1.0.3'
+ModuleVersion = '1.0.4'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -26,10 +26,9 @@ Copyright = '(c) 2019 Jan Tietze. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = @'
-A module that provides Powershell commands to deal with CylancePROTECT and 
-OPTICS detection and prevention events.
+A module that provides Powershell commands to deal with CylancePROTECT and OPTICS detection and prevention events.
 
-Check out the project page at https://github.com/jan-tee/TietzeIO.CyShell and the README and FAQ!.
+Check out the project page at https://jan-tee.github.io/
 '@
 
 # Minimum version of the Windows PowerShell engine required by this module
@@ -186,7 +185,6 @@ FileList = @(
 	"CHANGELOG.md",
 	"LICENSE.md",
 	"License.txt",
-	"README.md",
 	"TietzeIO.CyShell.psd1",
 	"TietzeIO.CyShell.psm1",
 	"AnalyticsCmdlets.ps1",
