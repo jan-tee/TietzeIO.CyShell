@@ -14,7 +14,7 @@ namespace TietzeIO.CyShell.Cmdlets.Console
         public string APIId { get; set; }
 
         [Parameter(Mandatory = false)]
-        public object APISecret { get; set; }
+        public PSObject APISecret { get; set; }
 
         [Parameter(Mandatory = false)]
         public string APITenantId { get; set; }
@@ -76,7 +76,8 @@ namespace TietzeIO.CyShell.Cmdlets.Console
             }
             if (null != APISecret)
             {
-                console.SetAPISecret(APISecret as SecureString);
+                var secret = ConvertToSecureString("APISecret", APISecret);
+                console.SetAPISecret(secret);
                 changed = true;
             }
 
