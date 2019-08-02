@@ -36,6 +36,12 @@ APITenantId: Your-API-Tenant-ID
 Region: (apne1|au|euc1|sae1|us-gov|us)
 ```
 
+### Example 2
+```powershell
+PS C:\> New-CylanceConsole -Console MyConsole -Region euc1 -APIID 12345678 -APISecret 12345678 -APITenantId 12345678
+```
+
+
 Use 'us' for US consoles, 'euc1' for Europe, and for any other console, use the appropriate suffix from your console login page URL.
 
 ## PARAMETERS
