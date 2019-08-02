@@ -8,7 +8,7 @@ schema: 2.0.0
 # Sync-CylanceCache
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Refreshes the session cache
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Sync-CylanceCache [-Api <ApiConnectionHandle>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Refreshes the session cache (e.g. the PROTECT/OPTICS object cache) for the session that is populated when you use Connect-Cylance with the -ProtectCache and -OpticsCache options.
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-CylanceSession
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Configures the current cylance API session
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Set-CylanceSession [-Cache <Boolean>] [-Proxy <String>] [-Api <ApiConnectionHand
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Configures the current cylance API session (e.g. the proxy settings)
 
 ## EXAMPLES
 

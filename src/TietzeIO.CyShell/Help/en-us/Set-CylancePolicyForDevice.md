@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-CylancePolicyForDevice
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Assigns policy to a device.
 
 ## SYNTAX
 
@@ -18,16 +18,18 @@ Set-CylancePolicyForDevice -Device <CyDeviceBase> [-Policy <CyPolicyMinimalMetaD
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Will apply an existing policy to a device.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> $device = (Get-CylanceDevices)[0]
+PS C:\> $policy = (Get-CylancePolicies)[1]
+PS C:\> $device | Set-CylancePolicyForDevice -Policy $policy
 ```
 
-{{ Add example description here }}
+Takes the first device in a tenant, and applies the second policy in the list to it (basically a randomly chosen policy, because order is not guaranteed).
 
 ## PARAMETERS
 
