@@ -1,5 +1,8 @@
 ﻿# TietzeIO.CyShell
 
+[![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/TietzeIO.CyShell.svg)](https://www.powershellgallery.com/packages/TietzeIO.CyShell)
+[![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/TietzeIO.CyShell.svg)](https://www.powershellgallery.com/packages/TietzeIO.CyShell)
+
 ## What's this, and why should I use it
 
 This is an open-source Powershell module and wrapper for the Cylance REST API.
@@ -32,7 +35,7 @@ install-module -name TietzeIO.CyShell
 
 ## Web Documentation
 
-Documentation can be found here: https://jan-tee.github.io/TietzeIO.CyShell/TietzeIO.CyShell.html
+Documentation can be found [on jan-tee.github.io](https://jan-tee.github.io/TietzeIO.CyShell/TietzeIO.CyShell.html).
 
 ## Usage
 
